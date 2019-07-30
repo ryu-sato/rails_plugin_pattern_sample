@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def main
-    @plugins = [PluginA::ManufacturerA.new]
+    @plugin_manufacturer_a = RailsPluginPatternSample::Plugin.get_processor(manufacturer: 'a')
+    @plugins = RailsPluginPatternSample::Plugin.all_processors
   end
 end

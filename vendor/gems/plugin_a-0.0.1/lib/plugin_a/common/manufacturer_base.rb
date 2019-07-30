@@ -1,15 +1,11 @@
-require 'rails_plugin_pattern_sample/plugin'
+require 'rails_plugin_pattern_sample/plugin/processor'
 
 module PluginA
-  class ManufacturerBase
-    RailsPluginPatternSample::Plugin.register_rule('manufacturer_base', self)
+  class ManufacturerBase < RailsPluginPatternSample::Plugin::Processor
+    RailsPluginPatternSample::Plugin.register_processor('manufacturer_base', self)
 
-    MATCH_METADATA = {
+    @match_metadata = {
       manufacturer: 'Base'
     }
-
-    def match_metadata
-      MATCH_METADATA
-    end
   end
 end
