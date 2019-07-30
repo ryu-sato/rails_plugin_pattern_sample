@@ -1,3 +1,8 @@
+PATH
+  remote: vendor/gems/plugin_a-0.0.1
+  specs:
+    plugin_a (0.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -198,6 +203,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  plugin_a (= 0.0.1)!
   puma (~> 3.11)
   rails (~> 5.2.3)
   sass-rails (~> 5.0)
