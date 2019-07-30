@@ -1,7 +1,8 @@
 module PluginA
   class ManufacturerA
     MATCH_METADATA = {
-      manufacturer: 'A'
+      manufacturer: 'B',
+      test: 'hoge'
     }
 
     def match_metadata
