@@ -1,16 +1,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "plugin_a/version"
+require "rails_plugin_pattern_sample/plugin/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "plugin_a"
-  spec.version       = PluginA::VERSION
+  spec.name          = "rails_plugin_pattern_sample-plugin"
+  spec.version       = RailsPluginPatternSample::Plugin::VERSION
   spec.authors       = ["Ryu Sato"]
   spec.email         = ["ryu@weseek.co.jp"]
 
-  spec.summary       = %q{sample application of Rails plugin pattern}
-  spec.description   = %q{sample application of Rails plugin pattern}
+  spec.summary       = %q{rails_plugin_pattern_sample plugin}
+  spec.description   = %q{rails_plugin_pattern_sample plugin}
   spec.homepage      = ""
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -38,5 +38,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.17"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_runtime_dependency 'rails_plugin_pattern_sample-plugin'
 end

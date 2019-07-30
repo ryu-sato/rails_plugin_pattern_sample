@@ -2,6 +2,12 @@ PATH
   remote: vendor/gems/plugin_a-0.0.1
   specs:
     plugin_a (0.0.1)
+      rails_plugin_pattern_sample-plugin
+
+PATH
+  remote: vendor/gems/rails_plugin_pattern_sample-plugin
+  specs:
+    rails_plugin_pattern_sample-plugin (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -206,6 +212,7 @@ DEPENDENCIES
   plugin_a (= 0.0.1)!
   puma (~> 3.11)
   rails (~> 5.2.3)
+  rails_plugin_pattern_sample-plugin!
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
