@@ -1,5 +1,5 @@
 PATH
-  remote: vendor/gems/plugin_a-0.0.1
+  remote: vendor/gems/plugin_a
   specs:
     plugin_a (0.0.1)
       rails_plugin_pattern_sample-plugin

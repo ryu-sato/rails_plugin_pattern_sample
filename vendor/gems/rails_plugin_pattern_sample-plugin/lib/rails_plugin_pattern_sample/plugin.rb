@@ -1,3 +1,4 @@
+require "rails_plugin_pattern_sample/plugin/processor"
 require "rails_plugin_pattern_sample/plugin/version"
 require 'rails_plugin_pattern_sample/error'
 
