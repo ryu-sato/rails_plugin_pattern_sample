@@ -63,5 +63,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Sample plugins
 #   PluginA
-gem 'plugin_a', '0.0.1', path: 'vendor/gems/plugin_a-0.0.1'
+gem 'plugin_a', path: 'vendor/gems/plugin_a-0.0.1'
 gem 'rails_plugin_pattern_sample-plugin', path: 'vendor/gems/rails_plugin_pattern_sample-plugin'
+
+# To show source of plugins
+gem 'pry', require: false
+
