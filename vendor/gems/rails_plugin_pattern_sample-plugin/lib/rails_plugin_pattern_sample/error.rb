@@ -1,4 +1,7 @@
 module RailsPluginPatternSample
+  class Error < StandardError; end
+  # Your code goes here...
+
   class ProcessorSelectionFailed < StandardError
     def initialize(error_message: nil, found_processors: [])
       @message = error_message || 'Cannot found processor or found more than one.'

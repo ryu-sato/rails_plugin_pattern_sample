@@ -1,8 +1,12 @@
 require "plugin_a/version"
-require 'plugin_a/common/manufacturer_base'
-require 'plugin_a/manufacturer_a'
+
+require 'active_support/dependencies'
 
 module PluginA
-  class Error < StandardError; end
-  # Your code goes here...
+  autoload :Error, 'plugin_a/error'
+  autoload :ManufacturerA, 'plugin_a/manufacturer_a'
+
+  module Common
+    autoload :ManufacturerBase, 'plugin_a/common/manufacturer_base'
+  end
 end

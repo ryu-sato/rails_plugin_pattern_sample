@@ -60,13 +60,15 @@ group :test do
   gem 'chromedriver-helper'
 end
 
+group :production do
+  # Sample plugins
+  #   PluginA
+  gem 'plugin_a', path: 'vendor/gems/plugin_a'
+  gem 'rails_plugin_pattern_sample-plugin', path: 'vendor/gems/rails_plugin_pattern_sample-plugin'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-# Sample plugins
-#   PluginA
-gem 'plugin_a', path: 'vendor/gems/plugin_a'
-gem 'rails_plugin_pattern_sample-plugin', path: 'vendor/gems/rails_plugin_pattern_sample-plugin'
 
 # To show source of plugins
 gem 'pry'

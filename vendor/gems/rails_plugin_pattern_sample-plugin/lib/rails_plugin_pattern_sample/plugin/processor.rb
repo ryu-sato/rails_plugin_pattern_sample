@@ -1,5 +1,3 @@
-require 'rails_plugin_pattern_sample/plugin'
-
 module RailsPluginPatternSample
   module Plugin
     class Processor
