@@ -5,4 +5,6 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # Specify your gem's dependencies in plugin_a.gemspec
 gemspec
 
-gem 'rails_plugin_pattern_sample-plugin', path: '../rails_plugin_pattern_sample-plugin'
+gem 'active_support'
+
+gem 'rails_plugin_pattern_sample_plugin', path: '../rails_plugin_pattern_sample_plugin'

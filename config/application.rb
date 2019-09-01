@@ -19,8 +19,8 @@ module RailsPluginPatternSample
     # [TODO] move below config to config/environments/developments.rb
     if Rails.env.development?
       # autoload gems where are under vendor/gems directory
-      plugin_gems = ['plugin_a', 'rails_plugin_pattern_sample-plugin'].map {|gem_name| Rails.root.join('vendor/gems', gem_name, 'lib').to_s }
-      config.autoload_paths += plugin_gems
+      # plugin_gems = ['plugin_a', 'rails_plugin_pattern_sample-plugin'].map {|gem_name| Rails.root.join('vendor/gems', gem_name, 'lib').to_s }
+      # config.autoload_paths += plugin_gems
     end
   end
 end

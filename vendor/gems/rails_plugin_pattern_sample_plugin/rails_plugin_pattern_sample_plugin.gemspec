@@ -1,11 +1,11 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "rails_plugin_pattern_sample/plugin/version"
+require "rails_plugin_pattern_sample_plugin/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "rails_plugin_pattern_sample-plugin"
-  spec.version       = RailsPluginPatternSample::Plugin::VERSION
+  spec.name          = "rails_plugin_pattern_sample_plugin"
+  spec.version       = RailsPluginPatternSamplePlugin::VERSION
   spec.authors       = ["Ryu Sato"]
   spec.email         = ["ryu@weseek.co.jp"]
 

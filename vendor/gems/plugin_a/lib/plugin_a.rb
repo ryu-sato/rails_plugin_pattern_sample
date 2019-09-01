@@ -1,12 +1,10 @@
 require "plugin_a/version"
+require 'error'
 
-require 'active_support/dependencies'
+require 'plugin_a/manufacturer_a'
+require 'plugin_a/manufacturer_b'
+require 'plugin_a/common/manufacturer_base'
 
 module PluginA
-  autoload :Error, 'plugin_a/error'
-  autoload :ManufacturerA, 'plugin_a/manufacturer_a'
-
-  module Common
-    autoload :ManufacturerBase, 'plugin_a/common/manufacturer_base'
-  end
+  Hoge = 'HOGE'
 end

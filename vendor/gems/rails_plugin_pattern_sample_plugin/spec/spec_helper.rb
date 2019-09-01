@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "rails_plugin_pattern_sample/plugin"
+require "rails_plugin_pattern_sample_plugin"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
